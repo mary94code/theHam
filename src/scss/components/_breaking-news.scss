@@ -1,0 +1,137 @@
+/*Breaking news styles*/
+
+.breaking-news {
+    text-align: center;
+    margin-top: 82px;
+    margin-bottom: 120px;
+}
+
+.breaking-news-header {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.breaking-news-header::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 2px;
+    background-color: #18CFAB;
+    bottom: -12px;
+    left: 49%;
+    transform: translateX(-50%)
+}
+
+.breaking-news-header::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 2px;
+    background-color: #18CFAB;
+    bottom: -17px;
+    left: 51%;
+    transform: translateX(-50%)
+}
+
+.ul-news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.news-date {
+    position: absolute;
+    right: 28px;
+    background: #203E38;
+    padding: 16px 6px;
+    color: #fff;
+}
+
+.breaking-news-list {
+    text-align: left;
+    position: relative;
+}
+
+.breaking-news-list:hover {
+    cursor: pointer;
+}
+
+.breaking-news-list:hover .news-date {
+    background-color: #18CFAB;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.breaking-news-list:hover .amazing-blog-post {
+    color: #18CFAB;
+    transition: 0.4s;
+}
+
+.amazing-blog-post {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 39px;
+    color: #717171;
+    padding-left: 10px;
+}
+
+.news-admin {
+    display: flex;
+
+}
+
+.news-admin>p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 39px;
+    padding-left: 10px;
+}
+@media (max-width:800px) {    
+
+    .ul-news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .breaking-news-list>img {
+        width: 100%;
+    }
+
+    .news-date {
+        position: absolute;
+        right: calc(0% + 0px);
+        background: #203E38;
+        padding: 16px 6px;
+        color: #fff;
+    }
+}
+@media(min-width: 801px) and (max-width:1000px) {
+    .breaking-news-list>img {
+        width: 100%;
+    }
+
+    .breaking-news {
+        padding: 0 20px;
+    }
+
+    .ul-news {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+@media(max-width:576px){
+    .ul-news {
+   
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    
+}

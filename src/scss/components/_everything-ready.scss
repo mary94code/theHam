@@ -1,0 +1,48 @@
+/*everything ready styles*/
+.everything-ready {
+    background: linear-gradient(rgba(12, 6, 6, 0.8), rgba(3, 2, 2, 0.8)), url('../image/Sections-background/section-2.jpg') no-repeat center center fixed;
+    text-align: center;
+    padding-top: 126px;
+    padding-bottom: 143px;
+    margin-top: 91px;
+}
+
+.everything-ready>h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #18CFAB;
+}
+
+.everything-ready>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #D8D8D8;
+    margin-bottom: 67px;
+    margin-top: 12px;
+}
+
+.btn-purch {
+
+    background-color: #18CFAB;
+}
+@media (max-width:800px) {    
+    .everything-ready {
+        padding: 20px;
+    }
+
+    .everything-ready>h3 {
+        font-size: 30px;
+    }
+
+    .everything-ready>p {
+        font-size: 13px;
+
+    }
+}

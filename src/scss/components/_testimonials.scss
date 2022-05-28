@@ -1,0 +1,130 @@
+/* Testimonial styles*/
+
+.testimonials {
+    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.5)), url('../../../dist/image/Sections-background/section-3.jpg') no-repeat center center fixed;
+    padding-top: 98px;
+    text-align: center;
+}
+
+.testimonials>h3 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.testimonials>h3::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 2px;
+    background-color: #18CFAB;
+    bottom: -12px;
+    left: 49%;
+    transform: translateX(-50%)
+}
+
+.testimonials>h3::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 2px;
+    background-color: #18CFAB;
+    bottom: -17px;
+    left: 51%;
+    transform: translateX(-50%);
+    /* margin-bottom: 66px; */
+}
+
+.user-comments>img {
+    margin-top: 100px;
+}
+
+.user-parag {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #BBBBBB;
+    margin-top: 38px;
+    margin-bottom: 37px;
+    padding: 0 60px;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #18CFAB;
+}
+
+.user-title {
+    font-size: 13px;
+    line-height: 30px;
+    color: #BBBBBB;
+}
+
+.user-image {
+    border-radius: 50%;
+    border: 8px solid rgba(0, 255, 242, 0.2);
+    height: 150px;
+    width: 150px;
+}
+
+.users-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 69px;
+    padding-bottom: 104px;
+}
+
+.user-group {
+    display: flex;
+}
+
+.users-small {
+    margin: 0 19px;
+}
+
+.users-small>img {
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    border: 3px solid rgba(0, 255, 242, 0.2);
+    cursor: pointer;
+}
+
+.arrows {
+    margin-top: 15px;
+}
+
+.arrows>img:hover {
+    background-color: #18CFAB;
+    cursor: pointer;
+}
+
+.active-user {
+    transform: translateY(-20px);
+    transition: 0.4s;
+}
+@media (max-width:800px) {    
+    .user-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .users-small {
+        padding: 10px;
+    }
+
+    .active-user {
+        transform: none;
+    }
+
+    .arrows {
+        padding-top: 50px;
+    }
+
+}
